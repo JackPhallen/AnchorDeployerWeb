@@ -21,7 +21,7 @@ def check(cluster_name, region, max_nodes, min_nodes, projet_name):
     output = {}
     exit_codes = []
 
-    check1_process = subprocess.run(["./cloud-helm-charts/cluster_status.sh", cluster_name])
+    check1_process = subprocess.run(["./cloud-helm-charts/cluster_status.sh", cluster_name, region])
     exit_codes.append(check1_process.returncode == 0)
 
     check2_process = subprocess.run("./cloud-helm-charts/HealthCheck-07-BackendServices.sh")
