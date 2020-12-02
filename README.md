@@ -20,4 +20,4 @@ Create database (not necessary for this project but it comes with django)
 
 ## Run
 
-`python manage.py 127.0.0.1:8000`
+`python manage.py runserver 127.0.0.1:8000`
