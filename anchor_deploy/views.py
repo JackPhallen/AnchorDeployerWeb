@@ -28,7 +28,7 @@ def deploy_view(request):
 @csrf_exempt
 def getip_view(request):
     post_data = _decode(request.body)
-    ip = getip(post_data['cluster_name'])
+    ip = getip(post_data['clusterName'])
     data = {}
     data['ip'] = ip
     data_json = json.dumps(data)
